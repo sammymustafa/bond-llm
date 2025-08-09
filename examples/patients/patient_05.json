@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID005"
+      }
+    ],
+    "name": [
+      {
+        "text": "Sara Kim"
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1992-09-14",
+    "sexualOrientation": "bisexual",
+    "address": [
+      {
+        "state": "TX",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Triple-negative breast cancer"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    },
+    {
+      "code": {
+        "text": "PD-L1"
+      },
+      "valueString": "PD-L1 CPS 15"
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Letrozole"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "former",
+    "alcohol": "none",
+    "caregiverSupport": false,
+    "travelTimeMinutes": 30
+  }
+}

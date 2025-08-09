@@ -1,0 +1,59 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID015"
+      }
+    ],
+    "name": [
+      {
+        "text": "Diego Morales"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1999-12-30",
+    "sexualOrientation": "heterosexual",
+    "address": [
+      {
+        "state": "OR",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Classical Hodgkin Lymphoma"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Pembrolizumab"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "never",
+    "alcohol": "moderate",
+    "caregiverSupport": true,
+    "travelTimeMinutes": 90
+  }
+}

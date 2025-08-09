@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID002"
+      }
+    ],
+    "name": [
+      {
+        "text": "Alex Smith"
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1980-01-28",
+    "sexualOrientation": "not recorded",
+    "address": [
+      {
+        "state": "MA",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Metastatic breast cancer HR+, HER2-"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "0"
+      }
+    },
+    {
+      "code": {
+        "text": "PIK3CA"
+      },
+      "valueString": "PIK3CA E545K"
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Docetaxel"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "current",
+    "alcohol": "moderate",
+    "caregiverSupport": true,
+    "travelTimeMinutes": 20
+  }
+}

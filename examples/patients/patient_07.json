@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID007"
+      }
+    ],
+    "name": [
+      {
+        "text": "Nina Rossi"
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1987-07-08",
+    "sexualOrientation": "heterosexual",
+    "address": [
+      {
+        "state": "IL",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "ALK-positive NSCLC"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "0"
+      }
+    },
+    {
+      "code": {
+        "text": "ALK"
+      },
+      "valueString": "ALK positive"
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Docetaxel"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "never",
+    "alcohol": "social",
+    "caregiverSupport": false,
+    "travelTimeMinutes": 90
+  }
+}

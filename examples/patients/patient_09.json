@@ -1,0 +1,59 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID009"
+      }
+    ],
+    "name": [
+      {
+        "text": "Omar Farouk"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1950-02-14",
+    "sexualOrientation": "lesbian",
+    "address": [
+      {
+        "state": "NJ",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Metastatic castration-resistant prostate cancer"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Pembrolizumab"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "former",
+    "alcohol": "none",
+    "caregiverSupport": true,
+    "travelTimeMinutes": 20
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID004"
+      }
+    ],
+    "name": [
+      {
+        "text": "Ravi Patel"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1959-05-02",
+    "sexualOrientation": "not recorded",
+    "address": [
+      {
+        "state": "CA",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Diffuse Large B-Cell Lymphoma"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "2"
+      }
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "R-CHOP"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "current",
+    "alcohol": "social",
+    "caregiverSupport": true,
+    "travelTimeMinutes": 30
+  }
+}

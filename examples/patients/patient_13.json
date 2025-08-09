@@ -1,0 +1,59 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID013"
+      }
+    ],
+    "name": [
+      {
+        "text": "Jon Rivera"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1972-08-18",
+    "sexualOrientation": "not recorded",
+    "address": [
+      {
+        "state": "AZ",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Clear cell renal cell carcinoma"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "R-CHOP"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "current",
+    "alcohol": "social",
+    "caregiverSupport": true,
+    "travelTimeMinutes": 30
+  }
+}

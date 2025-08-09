@@ -1,0 +1,59 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID001"
+      }
+    ],
+    "name": [
+      {
+        "text": "Jane Doe"
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1971-03-12",
+    "sexualOrientation": "gay",
+    "address": [
+      {
+        "state": "NY",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Classical Hodgkin Lymphoma"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "R-CHOP"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "never",
+    "alcohol": "moderate",
+    "caregiverSupport": true,
+    "travelTimeMinutes": 90
+  }
+}

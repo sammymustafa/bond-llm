@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID006"
+      }
+    ],
+    "name": [
+      {
+        "text": "Daniel Ortiz"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1975-12-22",
+    "sexualOrientation": "heterosexual",
+    "address": [
+      {
+        "state": "FL",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "NSCLC EGFR exon 19 deletion"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    },
+    {
+      "code": {
+        "text": "EGFR"
+      },
+      "valueString": "EGFR exon 19 del"
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Pembrolizumab"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "former",
+    "alcohol": "moderate",
+    "caregiverSupport": false,
+    "travelTimeMinutes": 60
+  }
+}

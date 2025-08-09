@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID010"
+      }
+    ],
+    "name": [
+      {
+        "text": "Emily Chen"
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1976-10-19",
+    "sexualOrientation": "not recorded",
+    "address": [
+      {
+        "state": "CO",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "High-grade serous ovarian cancer"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    },
+    {
+      "code": {
+        "text": "BRCA"
+      },
+      "valueString": "BRCA germline"
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "R-CHOP"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "never",
+    "alcohol": "social",
+    "caregiverSupport": false,
+    "travelTimeMinutes": 90
+  }
+}

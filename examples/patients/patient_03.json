@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "patient": {
+    "identifier": [
+      {
+        "system": "urn:mrn",
+        "value": "ID003"
+      }
+    ],
+    "name": [
+      {
+        "text": "Michael Lee"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1967-11-07",
+    "sexualOrientation": "bisexual",
+    "address": [
+      {
+        "state": "PA",
+        "country": "United States"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "code": {
+        "text": "Acute Myeloid Leukemia"
+      },
+      "clinicalStatus": {
+        "text": "active"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "code": {
+        "text": "ECOG"
+      },
+      "valueQuantity": {
+        "value": "1"
+      }
+    },
+    {
+      "code": {
+        "text": "FLT3"
+      },
+      "valueString": "FLT3 ITD"
+    }
+  ],
+  "medications": [
+    {
+      "medicationCodeableConcept": {
+        "text": "Osimertinib"
+      },
+      "status": "active"
+    }
+  ],
+  "socialHistory": {
+    "smoking": "never",
+    "alcohol": "moderate",
+    "caregiverSupport": false,
+    "travelTimeMinutes": 30
+  }
+}
