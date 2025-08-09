@@ -15,23 +15,21 @@ Prereqs
 
 Setup
 ```bash
+cd /Users/sammymustafa/Desktop/bond/bond-llm
+deactivate 2>/dev/null || true
 cp .env.example .env
 docker compose up -d db
-
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
 python -m scripts.init_db
-python -m scripts.load_ctgov --cond "Hodgkin Lymphoma" --country "United States" --max_pages 1
-
-uvicorn src.app.main:app --reload
+uvicorn src.app.main:app --reload --reload-dir src --reload-dir examples --reload-exclude ".venv/*"
 ```
 
 Test a patient
 ```bash
 curl -X POST http://localhost:8000/match/patient   -H "Content-Type: application/json"   -d @examples/patients/patient_01.json
 ```
+http://localhost:8000/report/patient_01
 
 Add notes to the request:
 ```bash
@@ -48,4 +46,3 @@ PY
 - Extracts patient features from structured JSON and free-text notes
 - Computes a weighted score and lists criteria that need clarification
 - Calls a local open-weight LLM (if running) for a succinct rationale JSON
-
